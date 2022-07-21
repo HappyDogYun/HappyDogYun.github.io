@@ -1,3 +1,10 @@
-http://example.com/2022/07/20/birth_and_die/
 http://example.com/2022/07/20/Butterfly/
+http://example.com/2022/07/20/birth_and_die/
+http://example.com/link/index.html
+http://example.com/categories/index.html
+http://example.com/tags/index.html
 http://example.com/
+http://example.com/tags/web/
+http://example.com/tags/other/
+http://example.com/categories/%E5%BA%94%E7%94%A8/
+http://example.com/categories/%E6%84%9F%E6%82%9F/
