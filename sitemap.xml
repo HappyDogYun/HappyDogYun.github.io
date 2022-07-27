@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2022/07/27/centos%E9%98%B2%E7%81%AB%E5%A2%99/</loc>
+    <loc>http://example.com/2022/07/27/%E8%A7%A3%E5%86%B3Centos-8-%E5%81%9C%E6%AD%A2%E6%9C%8D%E5%8A%A1%E5%90%8Eyum%E6%BA%90%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
     
     <lastmod>2022-07-27</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/07/27/%E8%A7%A3%E5%86%B3Centos-8-%E5%81%9C%E6%AD%A2%E6%9C%8D%E5%8A%A1%E5%90%8Eyum%E6%BA%90%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
+    <loc>http://example.com/2022/07/27/centos%E9%98%B2%E7%81%AB%E5%A2%99/</loc>
     
     <lastmod>2022-07-27</lastmod>
     
@@ -129,14 +129,14 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/frp/</loc>
+    <loc>http://example.com/tags/centos/</loc>
     <lastmod>2022-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/centos/</loc>
+    <loc>http://example.com/tags/frp/</loc>
     <lastmod>2022-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
