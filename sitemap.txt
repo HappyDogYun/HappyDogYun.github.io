@@ -1,3 +1,4 @@
+http://example.com/2022/08/04/mysqli-labs(%E4%B8%80)/
 http://example.com/2022/07/27/centos%E9%98%B2%E7%81%AB%E5%A2%99/
 http://example.com/2022/07/27/%E8%A7%A3%E5%86%B3Centos-8-%E5%81%9C%E6%AD%A2%E6%9C%8D%E5%8A%A1%E5%90%8Eyum%E6%BA%90%E7%9A%84%E9%97%AE%E9%A2%98/
 http://example.com/2022/07/26/Tkinter%E5%8C%85%E8%A3%85%E5%B0%8F%E7%88%AC%E8%99%AB/
@@ -19,3 +20,4 @@ http://example.com/categories/%E5%BA%94%E7%94%A8/
 http://example.com/categories/%E8%BF%90%E7%BB%B4/
 http://example.com/categories/%E6%84%9F%E6%82%9F/
 http://example.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/
+http://example.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/
