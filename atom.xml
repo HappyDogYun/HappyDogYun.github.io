@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-12-28T07:08:53.604Z</updated>
+  <updated>2022-12-28T13:09:07.832Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python离线安装依赖</title>
+    <link href="http://example.com/2022/12/28/python%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96/"/>
+    <id>http://example.com/2022/12/28/python%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96/</id>
+    <published>2022-12-28T07:35:13.000Z</published>
+    <updated>2022-12-28T13:09:07.832Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="在限制网络访问的环境中python-离线安装包及其依赖包"><a href="#在限制网络访问的环境中python-离线安装包及其依赖包" class="headerlink" title="在限制网络访问的环境中python 离线安装包及其依赖包"></a>在限制网络访问的环境中python 离线安装包及其依赖包</h3><p>1.以flask为例，先在外网下载安装pipdeptree、flask</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">./pip.exe install pipdeptree</span><br><span class="line">./pip.exe install flask</span><br></pre></td></tr></table></figure><p>2.使用pipdeptree 查看并生成requirements.txt</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./pipdeptree.exe -f  -p flask</span><br></pre></td></tr></table></figure><p>3.将上述依赖生成文件</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./pipdeptree.exe -f  -p flask &gt; .\requirements.txt</span><br></pre></td></tr></table></figure><p>4.下载所有包至本地</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./pip.exe download -r .\requirements.txt</span><br></pre></td></tr></table></figure><p>5.将文件拷贝至内网机器执行如下命令离线安装</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./pip.exe install --no-index --find-links=./ -r requirements.txt</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;在限制网络访问的环境中python-离线安装包及其依赖包&quot;&gt;&lt;a href=&quot;#在限制网络访问的环境中python-离线安装包及其依赖包&quot; class=&quot;headerlink&quot; title=&quot;在限制网络访问的环境中python 离线安装包及其依赖包&quot;&gt;&lt;/a&gt;在限</summary>
+      
+    
+    
+    
+    <category term="应用" scheme="http://example.com/categories/%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>利用frp实现内网穿透</title>
