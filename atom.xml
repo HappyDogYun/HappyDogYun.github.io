@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-12-29T02:07:07.518Z</updated>
+  <updated>2022-12-29T05:47:44.941Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo文章内图片显示问题</title>
+    <link href="http://example.com/2022/12/29/hexo%E6%96%87%E7%AB%A0%E5%86%85%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
+    <id>http://example.com/2022/12/29/hexo%E6%96%87%E7%AB%A0%E5%86%85%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</id>
+    <published>2022-12-29T05:33:01.000Z</published>
+    <updated>2022-12-29T05:47:44.941Z</updated>
+    
+    <content type="html"><![CDATA[<p>设置站点配置_config.yml</p><h2 id="一、设置站点配置-config-yml"><a href="#一、设置站点配置-config-yml" class="headerlink" title="一、设置站点配置_config.yml"></a>一、设置站点配置_config.yml</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true </span><br></pre></td></tr></table></figure><p><img src="/hexo%E6%96%87%E7%AB%A0%E5%86%85%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/1.webp" alt="img"></p><h2 id="二、安装插件"><a href="#二、安装插件" class="headerlink" title="二、安装插件"></a>二、安装插件</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo<span class="literal">-asset-image</span> <span class="literal">--</span> save</span><br><span class="line">npm install hexo<span class="literal">-asset-image</span> <span class="literal">--</span> save <span class="comment"># 或者</span></span><br></pre></td></tr></table></figure><h2 id="三-引用图片"><a href="#三-引用图片" class="headerlink" title="三.引用图片"></a>三.引用图片</h2><p>运行<code>hexo n &quot;xxxx&quot;</code>来生成md博文时，<code>/source/_posts</code>文件夹内除了<code>xxxx.md</code>文件还有一个同名的文件夹。</p><p>在xxxx.md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片：</p><p><code>![这里输入图片描述](xxxx/图片名.jpg)</code></p><p>hexo g生成页面后，进入public文件中查看相关字段，可以发现，html标签内的语句是<code>&lt;img src=&quot;…xxxx/图片名.jpg&quot;&gt;</code>，而不是<code>&lt;img src=&quot;xxxx/图片名.jpg&gt;</code>。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;设置站点配置_config.yml&lt;/p&gt;
+&lt;h2 id=&quot;一、设置站点配置-config-yml&quot;&gt;&lt;a href=&quot;#一、设置站点配置-config-yml&quot; class=&quot;headerlink&quot; title=&quot;一、设置站点配置_config.yml&quot;&gt;&lt;/a&gt;一、设置</summary>
+      
+    
+    
+    
+    <category term="应用" scheme="http://example.com/categories/%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="web" scheme="http://example.com/tags/web/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建兰空图床</title>
@@ -37,6 +62,30 @@
     
     
     <category term="docker" scheme="http://example.com/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python离线安装依赖</title>
+    <link href="http://example.com/2022/12/28/python%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96/"/>
+    <id>http://example.com/2022/12/28/python%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96/</id>
+    <published>2022-12-28T07:35:13.000Z</published>
+    <updated>2022-12-29T05:50:05.711Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="在限制网络访问的环境中python-离线安装包及其依赖包"><a href="#在限制网络访问的环境中python-离线安装包及其依赖包" class="headerlink" title="在限制网络访问的环境中python 离线安装包及其依赖包"></a>在限制网络访问的环境中python 离线安装包及其依赖包</h3><p>1.以flask为例，先在外网下载安装pipdeptree、flask</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">./pip.exe install pipdeptree</span><br><span class="line">./pip.exe install flask</span><br></pre></td></tr></table></figure><p>2.使用pipdeptree 查看并生成requirements.txt</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./pipdeptree.exe -f  -p flask</span><br></pre></td></tr></table></figure><p>3.将上述依赖生成文件</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./pipdeptree.exe -f  -p flask &gt; .\requirements.txt</span><br></pre></td></tr></table></figure><p>4.下载所有包至本地</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./pip.exe download -r .\requirements.txt</span><br></pre></td></tr></table></figure><p>5.将文件拷贝至内网机器执行如下命令离线安装</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./pip.exe install --no-index --find-links=./ -r requirements.txt</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;在限制网络访问的环境中python-离线安装包及其依赖包&quot;&gt;&lt;a href=&quot;#在限制网络访问的环境中python-离线安装包及其依赖包&quot; class=&quot;headerlink&quot; title=&quot;在限制网络访问的环境中python 离线安装包及其依赖包&quot;&gt;&lt;/a&gt;在限</summary>
+      
+    
+    
+    
+    <category term="应用" scheme="http://example.com/categories/%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   

@@ -1,3 +1,5 @@
+http://example.com/2022/12/28/python%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96/
+http://example.com/2022/12/29/hexo%E6%96%87%E7%AB%A0%E5%86%85%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/
 http://example.com/2022/12/29/%E6%90%AD%E5%BB%BA%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8A/
 http://example.com/2022/12/28/%E5%88%A9%E7%94%A8frp%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/
 http://example.com/2022/08/04/mysqli-labs(%E4%B8%80)/
@@ -16,8 +18,8 @@ http://example.com/tags/web/
 http://example.com/tags/Lenovo%E3%80%81optane/
 http://example.com/tags/python/
 http://example.com/tags/other/
-http://example.com/tags/centos/
 http://example.com/tags/frp/
+http://example.com/tags/centos/
 http://example.com/tags/docker/
 http://example.com/categories/%E5%BA%94%E7%94%A8/
 http://example.com/categories/%E8%BF%90%E7%BB%B4/
