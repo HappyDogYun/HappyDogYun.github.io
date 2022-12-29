@@ -16,8 +16,8 @@ http://example.com/tags/web/
 http://example.com/tags/Lenovo%E3%80%81optane/
 http://example.com/tags/python/
 http://example.com/tags/other/
-http://example.com/tags/frp/
 http://example.com/tags/centos/
+http://example.com/tags/frp/
 http://example.com/tags/docker/
 http://example.com/categories/%E5%BA%94%E7%94%A8/
 http://example.com/categories/%E8%BF%90%E7%BB%B4/
