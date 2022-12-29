@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-12-28T13:09:07.832Z</updated>
+  <updated>2022-12-29T02:07:07.518Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>python离线安装依赖</title>
-    <link href="http://example.com/2022/12/28/python%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96/"/>
-    <id>http://example.com/2022/12/28/python%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96/</id>
-    <published>2022-12-28T07:35:13.000Z</published>
-    <updated>2022-12-28T13:09:07.832Z</updated>
+    <title>搭建兰空图床</title>
+    <link href="http://example.com/2022/12/29/%E6%90%AD%E5%BB%BA%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8A/"/>
+    <id>http://example.com/2022/12/29/%E6%90%AD%E5%BB%BA%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8A/</id>
+    <published>2022-12-29T02:04:23.000Z</published>
+    <updated>2022-12-29T02:07:07.518Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="在限制网络访问的环境中python-离线安装包及其依赖包"><a href="#在限制网络访问的环境中python-离线安装包及其依赖包" class="headerlink" title="在限制网络访问的环境中python 离线安装包及其依赖包"></a>在限制网络访问的环境中python 离线安装包及其依赖包</h3><p>1.以flask为例，先在外网下载安装pipdeptree、flask</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">./pip.exe install pipdeptree</span><br><span class="line">./pip.exe install flask</span><br></pre></td></tr></table></figure><p>2.使用pipdeptree 查看并生成requirements.txt</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./pipdeptree.exe -f  -p flask</span><br></pre></td></tr></table></figure><p>3.将上述依赖生成文件</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./pipdeptree.exe -f  -p flask &gt; .\requirements.txt</span><br></pre></td></tr></table></figure><p>4.下载所有包至本地</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./pip.exe download -r .\requirements.txt</span><br></pre></td></tr></table></figure><p>5.将文件拷贝至内网机器执行如下命令离线安装</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./pip.exe install --no-index --find-links=./ -r requirements.txt</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1 id="搭建兰空图床"><a href="#搭建兰空图床" class="headerlink" title="搭建兰空图床"></a>搭建兰空图床</h1><h2 id="一、官方地址"><a href="#一、官方地址" class="headerlink" title="一、官方地址"></a>一、官方地址</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`https://www.lsky.pro/`</span><br></pre></td></tr></table></figure><p><img src="http://36.26.95.149:7791/i/2022/12/29/63acf275512d1.png" alt="2022-12-29-09-40-56-image.png"></p><h2 id="二、搭建过程"><a href="#二、搭建过程" class="headerlink" title="二、搭建过程"></a>二、搭建过程</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.bilibili.com/video/BV1bS4y1q7oe/?vd_source=fd4b4bd8fa781a031ed910257764fec4</span><br></pre></td></tr></table></figure><h3 id="（一）安装docker"><a href="#（一）安装docker" class="headerlink" title="（一）安装docker"></a>（一）安装docker</h3><h3 id="（二）docker-compose"><a href="#（二）docker-compose" class="headerlink" title="（二）docker-compose"></a>（二）docker-compose</h3><h3 id="（三）编辑docker-compose-yml文件"><a href="#（三）编辑docker-compose-yml文件" class="headerlink" title="（三）编辑docker-compose.yml文件"></a>（三）编辑docker-compose.yml文件</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">&#x27;3&#x27;</span></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">    <span class="attr">lsky-pro:</span></span><br><span class="line">        <span class="attr">container_name:</span> <span class="string">lsky-pro</span></span><br><span class="line">        <span class="attr">image:</span> <span class="string">dko0/lsky-pro</span></span><br><span class="line">        <span class="attr">restart:</span> <span class="string">always</span></span><br><span class="line">        <span class="attr">volumes:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">/root/data/docker_data/lsky-pro/lsky-pro-data:/var/www/html</span>  <span class="comment">#映射到本地</span></span><br><span class="line">        <span class="attr">ports:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="number">7791</span><span class="string">:80</span></span><br><span class="line">        <span class="attr">environment:</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">MYSQL_HOST=mysql</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">MYSQL_DATABASE=lsky-pro</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">MYSQL_USER=lsky-pro</span></span><br><span class="line">            <span class="bullet">-</span> <span class="string">MYSQL_PASSWORD=lsky-pro</span></span><br><span class="line"><span class="attr">mysql:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">mysql:8.0</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">lsky-pro-db</span></span><br><span class="line">    <span class="attr">restart:</span> <span class="string">always</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">MYSQL_DATABASE=lsky-pro</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">MYSQL_USER=lsky-pro</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">MYSQL_PASSWORD=lsky-pro</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">MYSQL_ROOT_PASSWORD=lsky-pro</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/root/data/docker_data/lsky-pro/db:/var/lib/mysql</span></span><br></pre></td></tr></table></figure><h3 id="（四）云服务防火墙配置"><a href="#（四）云服务防火墙配置" class="headerlink" title="（四）云服务防火墙配置"></a>（四）云服务防火墙配置</h3>]]></content>
     
     
       
       
-    <summary type="html">&lt;h3 id=&quot;在限制网络访问的环境中python-离线安装包及其依赖包&quot;&gt;&lt;a href=&quot;#在限制网络访问的环境中python-离线安装包及其依赖包&quot; class=&quot;headerlink&quot; title=&quot;在限制网络访问的环境中python 离线安装包及其依赖包&quot;&gt;&lt;/a&gt;在限</summary>
+    <summary type="html">&lt;h1 id=&quot;搭建兰空图床&quot;&gt;&lt;a href=&quot;#搭建兰空图床&quot; class=&quot;headerlink&quot; title=&quot;搭建兰空图床&quot;&gt;&lt;/a&gt;搭建兰空图床&lt;/h1&gt;&lt;h2 id=&quot;一、官方地址&quot;&gt;&lt;a href=&quot;#一、官方地址&quot; class=&quot;headerlink&quot; titl</summary>
       
     
     
@@ -36,7 +36,7 @@
     <category term="应用" scheme="http://example.com/categories/%E5%BA%94%E7%94%A8/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
+    <category term="docker" scheme="http://example.com/tags/docker/"/>
     
   </entry>
   
