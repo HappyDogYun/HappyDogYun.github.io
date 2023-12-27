@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-12-29T05:59:28.860Z</updated>
+  <updated>2023-12-27T07:52:32.484Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Anaconda使用</title>
+    <link href="http://example.com/2023/12/27/Anaconda%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/2023/12/27/Anaconda%E4%BD%BF%E7%94%A8/</id>
+    <published>2023-12-27T07:24:26.000Z</published>
+    <updated>2023-12-27T07:52:32.484Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、Anaconda介绍"><a href="#一、Anaconda介绍" class="headerlink" title="一、Anaconda介绍"></a>一、Anaconda介绍</h1><p>（一）发行版是开源免费的</p><p>（二）强大的科学计算能力</p><p>（三）简化的包管理和包部署</p><h1 id="二、Anaconda-Navigator"><a href="#二、Anaconda-Navigator" class="headerlink" title="二、Anaconda Navigator"></a>二、Anaconda Navigator</h1><h2 id="（一）create新环境"><a href="#（一）create新环境" class="headerlink" title="（一）create新环境"></a>（一）create新环境</h2><p>点击左下角create按钮</p><p><img src="/2023/12/27/Anaconda%E4%BD%BF%E7%94%A8/1.png" alt="img"></p><h1 id="三、常用conda命令"><a href="#三、常用conda命令" class="headerlink" title="三、常用conda命令"></a>三、常用conda命令</h1><h2 id="（一）查看conda版本"><a href="#（一）查看conda版本" class="headerlink" title="（一）查看conda版本"></a>（一）查看conda版本</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda <span class="literal">--version</span></span><br></pre></td></tr></table></figure><h2 id="（二）创建新的虚拟环境"><a href="#（二）创建新的虚拟环境" class="headerlink" title="（二）创建新的虚拟环境"></a>（二）创建新的虚拟环境</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create <span class="literal">-n</span> [虚拟环境名称] python=<span class="number">3.5</span></span><br></pre></td></tr></table></figure><h2 id="（三）切换进入虚拟环境"><a href="#（三）切换进入虚拟环境" class="headerlink" title="（三）切换进入虚拟环境"></a>（三）切换进入虚拟环境</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">activate [虚拟环境名称]</span><br></pre></td></tr></table></figure><h2 id="（四）查看虚拟环境列表"><a href="#（四）查看虚拟环境列表" class="headerlink" title="（四）查看虚拟环境列表"></a>（四）查看虚拟环境列表</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda env list</span><br></pre></td></tr></table></figure><h2 id="（五）在虚拟环境中添加包"><a href="#（五）在虚拟环境中添加包" class="headerlink" title="（五）在虚拟环境中添加包"></a>（五）在虚拟环境中添加包</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install django=<span class="number">2.0</span></span><br></pre></td></tr></table></figure><h2 id="（六）查看某一虚拟环境中安装的包"><a href="#（六）查看某一虚拟环境中安装的包" class="headerlink" title="（六）查看某一虚拟环境中安装的包"></a>（六）查看某一虚拟环境中安装的包</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda list</span><br></pre></td></tr></table></figure><h2 id="（七）升级某一虚拟环境中的软件包"><a href="#（七）升级某一虚拟环境中的软件包" class="headerlink" title="（七）升级某一虚拟环境中的软件包"></a>（七）升级某一虚拟环境中的软件包</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda update [包名称]</span><br></pre></td></tr></table></figure><h2 id="（八）删除某一虚拟环境中的软件包"><a href="#（八）删除某一虚拟环境中的软件包" class="headerlink" title="（八）删除某一虚拟环境中的软件包"></a>（八）删除某一虚拟环境中的软件包</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda remove [包名称]</span><br></pre></td></tr></table></figure><h2 id="（九）删除某一虚拟环境"><a href="#（九）删除某一虚拟环境" class="headerlink" title="（九）删除某一虚拟环境"></a>（九）删除某一虚拟环境</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda remove <span class="literal">-n</span> [虚拟环境名称] <span class="literal">--all</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一、Anaconda介绍&quot;&gt;&lt;a href=&quot;#一、Anaconda介绍&quot; class=&quot;headerlink&quot; title=&quot;一、Anaconda介绍&quot;&gt;&lt;/a&gt;一、Anaconda介绍&lt;/h1&gt;&lt;p&gt;（一）发行版是开源免费的&lt;/p&gt;
+&lt;p&gt;（二）强大的科学计算</summary>
+      
+    
+    
+    
+    <category term="Python" scheme="http://example.com/categories/Python/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>hexo文章内图片显示问题</title>
