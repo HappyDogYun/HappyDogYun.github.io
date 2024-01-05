@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-12-27T07:52:32.484Z</updated>
+  <updated>2024-01-05T13:21:33.024Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>windows防火墙</title>
+    <link href="http://example.com/2024/01/05/windows%E9%98%B2%E7%81%AB%E5%A2%99/"/>
+    <id>http://example.com/2024/01/05/windows%E9%98%B2%E7%81%AB%E5%A2%99/</id>
+    <published>2024-01-05T13:07:22.000Z</published>
+    <updated>2024-01-05T13:21:33.024Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、windows查看开放端口"><a href="#一、windows查看开放端口" class="headerlink" title="一、windows查看开放端口"></a>一、windows查看开放端口</h1><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat <span class="literal">-an</span></span><br></pre></td></tr></table></figure><h1 id="二、windows防火墙"><a href="#二、windows防火墙" class="headerlink" title="二、windows防火墙"></a>二、windows防火墙</h1><h2 id="1、分为入站和出站规则"><a href="#1、分为入站和出站规则" class="headerlink" title="1、分为入站和出站规则"></a>1、分为入站和出站规则</h2><p>一般使用自定义规则，可以配置端口、协议等丰富内容</p><h2 id="2、包过滤策略"><a href="#2、包过滤策略" class="headerlink" title="2、包过滤策略"></a>2、包过滤策略</h2><p>防火墙包过滤规则的匹配顺序如下：</p><ul><li><p>仅允许安全连接</p></li><li><p>拒绝连接</p></li><li><p>允许连接</p></li><li><p>默认拒绝连接</p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一、windows查看开放端口&quot;&gt;&lt;a href=&quot;#一、windows查看开放端口&quot; class=&quot;headerlink&quot; title=&quot;一、windows查看开放端口&quot;&gt;&lt;/a&gt;一、windows查看开放端口&lt;/h1&gt;&lt;figure class=&quot;highli</summary>
+      
+    
+    
+    
+    
+    <category term="网络" scheme="http://example.com/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>Anaconda使用</title>
